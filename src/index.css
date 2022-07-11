@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  width: 450px;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  font-size: 22px;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+}
+.add__form {
+  display: flex;
+}
+.add__form input {
+  flex: 1;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding-left: 15px;
+  outline: none;
+}
+.add__form input:focus {
+  border: 2px solid blue;
+}
+.add__form button {
+  background-color: blueviolet;
+  color: white;
+  padding: 15px 30px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.2s;
+}
+.add__form button:hover {
+  background-color: blue;
+}
+.todolist {
+  margin-top: 10px;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.todo__text {
+  flex: 1;
+  color: blueviolet;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.delete__block {
+  padding-right: 15px;
+}
+.delete__block button {
+  color: white;
+  background-color: blueviolet;
+  font-size: 14px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.delete__block button:hover {
+  background-color: crimson;
 }
